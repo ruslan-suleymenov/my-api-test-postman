@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Print Hello
         run: echo "Hello WORLD from TESTING"
+      - name: Install Newman
+        run: npm install newman
   
   my-deploy:
     runs-on: ubuntu-latest
