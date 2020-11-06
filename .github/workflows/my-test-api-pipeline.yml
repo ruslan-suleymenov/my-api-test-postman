@@ -34,6 +34,9 @@ jobs:
       
       - name: List current folder
         run: ls -la
+      
+      - name: Test API by NEWMAN
+        run: newman run my-api-test-postman.postman_test_run.json
   my-deploy:
     runs-on: ubuntu-latest
     needs: [my-testing]
