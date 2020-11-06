@@ -1,0 +1,55 @@
+{
+	"id": "ec3e9ec1-fe2d-4a6d-9de5-918c68adc459",
+	"name": "my-api-test-postman",
+	"timestamp": "2020-11-06T08:48:59.266Z",
+	"collection_id": "24ca7090-8523-400a-a180-4a930b67a46e",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 2,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "8ba5ac67-0b4e-4984-a15b-d7c13614a7d0",
+			"name": "Get all employees",
+			"url": "http://dummy.restapiexample.com/api/v1/employees",
+			"time": 53,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status is succes": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status is succes": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				53
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status is succes": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 53,
+	"collection": {
+		"requests": [
+			{
+				"id": "8ba5ac67-0b4e-4984-a15b-d7c13614a7d0",
+				"method": "GET"
+			}
+		]
+	}
+}
