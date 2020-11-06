@@ -24,6 +24,8 @@ jobs:
         run: npm install newman
 #       - name: Test Bash Script
 #         run: newman run my-api-test-postman.postman_test_run.json
+      - name: List current folder
+        run: ls -la
   
   my-deploy:
     runs-on: ubuntu-latest
