@@ -22,11 +22,12 @@ jobs:
         run: echo "Hello WORLD from TESTING"
       - name: Install Newman
         run: npm install newman
-      - name: Test Bash Script
-        run: newman run my-api-test-postman.postman_test_run.json
+#       - name: Test Bash Script
+#         run: newman run my-api-test-postman.postman_test_run.json
   
   my-deploy:
     runs-on: ubuntu-latest
+    needs: [my-testing]
     steps:
       - name: Print Hello
         run: echo "HEllO WORLD from DEPLOY"
