@@ -1,0 +1,30 @@
+# This is a CI Testing
+name: CI-Testing
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the main branch
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  my-testing:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Print Hello
+        run: echo "Hello WORLD from TESTING"
+  
+  my-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "HEllO WORLD from DEPLOY"
+    
+
